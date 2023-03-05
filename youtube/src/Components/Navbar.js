@@ -4,12 +4,11 @@ import {
   Badge,
   Box,
   IconButton,
-  Stack,
   Toolbar,
   Typography,
 } from "@mui/material";
 import { Link } from "react-router-dom";
-import youtube from "../Utils/youtube.png";
+import youtube from "../Assets/youtube.png";
 import SearchBar from "./SearchBar";
 import AccountCircle from "@mui/icons-material/AccountCircle";
 import MailIcon from "@mui/icons-material/Mail";
