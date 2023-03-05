@@ -43,6 +43,12 @@ a {
   border:none;
   outline:none;
   width:350px;
+  background-color: black;
+}
+.search-div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .category-btn{
@@ -72,6 +78,7 @@ a {
   .copyright{
     display:none !important;
   }
+
 }
 
 @media screen and (max-width: 600px) {
@@ -85,4 +92,5 @@ a {
   .search-bar{
     width:200px;
   }
+
 }
