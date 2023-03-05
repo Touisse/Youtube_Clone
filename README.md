@@ -19,10 +19,9 @@ To install this application, you will need to follow these steps:
 2. Run `npm install` to install the dependencies.
 3. Create a `.env` file at the root directory and add the following environment variables:
 
-`` bash 
-REACT_APP_API_KEY=<Your YouTube API Key>
-REACT_APP_CLIENT_ID=<Your Google OAuth Client ID>
-REACT_APP_REDIRECT_URI=<Your Google OAuth Redirect URI> ``
+``REACT_APP_API_KEY=<Your YouTube API Key> `` <br>
+``REACT_APP_CLIENT_ID=<Your Google OAuth Client ID>``<br>
+``REACT_APP_REDIRECT_URI=<Your Google OAuth Redirect URI> ``
 
 
 4. Run `npm start` to start the application.
@@ -66,3 +65,5 @@ If you would like to contribute to this project, please follow these steps:
 
 This application is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
 
+## Interfaces
+soon
