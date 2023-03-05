@@ -19,6 +19,10 @@ const SearchBar = () => {
           boxShadow: "none",
           mr: { sm: 2 },
           backgroundColor: "transparent",
+		//   width:'600px',
+		  height:'40px',
+		  display: "flex",
+		  justifyContent: "space-between",
         }}
       >
         <input
@@ -34,7 +38,8 @@ const SearchBar = () => {
             color: "white",
             backgroundColor: "rgb(34, 34, 35)",
             borderRadius: "0 12rem 12rem 0",
-            width: "70px",
+			height:'40px',
+			width:'70px',
           }}
         >
           <Search />
