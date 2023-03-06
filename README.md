@@ -66,4 +66,4 @@ If you would like to contribute to this project, please follow these steps:
 This application is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
 
 ## Interfaces
-soon
+<img width="1883" alt="Screen Shot 2023-03-06 at 5 23 52 PM" src="https://user-images.githubusercontent.com/63207127/223170390-1aa1ef54-c09e-478c-9260-b1727c11547d.png">
