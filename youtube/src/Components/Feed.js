@@ -1,30 +1,15 @@
 import React, { useState, useEffect } from "react";
-import axios from "axios";
 import { Box, Stack, Typography } from "@mui/material";
 import { Sidebar, Videos } from "../Components";
-
-const RAPID_API_KEY = "357649c602mshdda2360a8495042p1bfa68jsn8b1be504d963";
-const API_URL = "https://youtube-v31.p.rapidapi.com/captions";
+import { fetchFromAPI } from "../Utils/fetchFromApi";
 
 const Feed = () => {
   const [selectedCategory, setSelectedCategory] = useState("New");
-  const [videos, setVideos] = useState([]);
+  const [videos, setVideos] = useState(null);
   useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await axios.get(API_URL, {
-          headers: {
-            "X-RapidAPI-Key": RAPID_API_KEY,
-            "X-RapidAPI-Host": "youtube-v31.p.rapidapi.com",
-          },
-          params: { part: "snippet", videoId: "M7FIvfx5J10" ,  category: selectedCategory },
-        });
-        setVideos(response.data.items);
-      } catch (error) {
-        console.error(error);
-      }
-    };
-    fetchData();
+    fetchFromAPI(`search?part=snippet&q=${selectedCategory}`).then((data) =>
+      setVideos(data.items)
+    );
   }, [selectedCategory]);
 
   return (
